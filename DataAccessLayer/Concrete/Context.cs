@@ -12,7 +12,7 @@ namespace DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=ESN-STAJYER-K\\SQLEXPRESS01;database=CoreBlogDb; integrated security=true;");
+            optionsBuilder.UseSqlServer("server=DESKTOP-F4SEK0O\\SQLEXPRESS;database=CoreBlogDb; integrated security=true;");
         }
         public DbSet<About> Abouts { get; set; }
         public DbSet<Blog> Blogs { get; set; }
