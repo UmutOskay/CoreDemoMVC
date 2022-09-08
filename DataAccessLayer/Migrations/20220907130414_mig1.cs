@@ -49,7 +49,7 @@ namespace DataAccessLayer.Migrations
                 {
                     CategoryID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    CategoryName = table.Column<int>(type: "int", nullable: false),
+                    CategoryName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CategoryDescription = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CategoryStatus = table.Column<bool>(type: "bit", nullable: false)
                 },

@@ -94,8 +94,8 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("CategoryDescription")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("CategoryName")
-                        .HasColumnType("int");
+                    b.Property<string>("CategoryName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("CategoryStatus")
                         .HasColumnType("bit");
