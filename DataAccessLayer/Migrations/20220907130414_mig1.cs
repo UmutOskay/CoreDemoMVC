@@ -35,7 +35,7 @@ namespace DataAccessLayer.Migrations
                     BlogContent = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     BlogThumbnailImage = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     BlogImage = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    BlogeCreateDate = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    BlogCreateDate = table.Column<DateTime>(type: "nvarchar(max)", nullable: true),
                     BlogStatus = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
